@@ -3,6 +3,8 @@ Docker init project for php development.
 
 ## Getting started
 
+**Requirements:** docker, docker-compose
+
 Clone project:
 
 ```
