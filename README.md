@@ -14,8 +14,10 @@ git clone https://github.com/PLsergent/php-docker_cfa.git
 Build and run docker-compose:
 
 ```
-docker-compose build
+sudo docker-compose build
 docker-compose up
 ```
+
+***You may have to use `sudo` for `docker-compose build` to acces /data/db***
 
 App running: http://localhost:8080/

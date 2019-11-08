@@ -1,16 +1,11 @@
 <?php
 
+echo"<h1>Welcome to php-docker!</h1>";
+
 try {
 
     $mng = new MongoDB\Driver\Manager("mongodb://mongodb:27017");
-    $query = new MongoDB\Driver\Query([]); 
-     
-    $rows = $mng->executeQuery("init.init", $query);
-    
-    foreach ($rows as $row) {
-    
-        echo "$row->name $row->lastname\n";
-    }
+    var_dump($mng);
 
 } catch (MongoDB\Driver\Exception\Exception $e) {
 
